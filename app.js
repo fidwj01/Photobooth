@@ -6,6 +6,7 @@ var express = require('express');
 var formidable = require('formidable');  // we upload images in forms
 // this is good for parsing forms and reading in the images
 
+var port = process.env.PORT || 3000;
 var LIVE = true;
 var request = require('request');
 var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
@@ -90,7 +91,7 @@ app.post('/', function (request, response){
 });
 
 // You know what this is, right?
-app.listen(process.env.PORT);
+app.listen(port);
 
 // sends off an HTTP response with the given status code and message
 function sendCode(code,response,message) {
