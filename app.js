@@ -17,7 +17,7 @@ var app = express();
 // Now we build a pipeline for processing incoming HTTP requests
 
 // Case 1: static files
-app.use(express.static('/public')); // serve static files from public
+app.use(express.static('public')); // serve static files from public
 // if this succeeds, exits, and rest of the pipeline does not get done
 
 // Case 2: queries
