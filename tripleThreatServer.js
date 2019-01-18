@@ -326,7 +326,7 @@ function google(name,response){
       "requests": [
       {
        "image": {
-        "source": {"imageUri": "http://104.42.169.239/"+name}
+        "source": {"imageUri": "./"+name}
     },
     "features": [{ "type": "LABEL_DETECTION" }]
     }
