@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Photobooth</title>
+        <!-- <link rel="stylesheet" type="text/css" href="reset.css"> -->
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+    <body onload="init()">
+        <header>
+            <a id="headline" href="./main.html">Photobooth.</a>
+            <hr id="hr">
+            <div id="mobileMenu" >
+                <div id="mobileButtons">
+                    <img class="mobileIcon" src="./photobooth/uploadIcon-01.png" onclick="mobilePlus()"/>
+                    <img class="mobileIcon" src="./photobooth/filterIcon-01.png" onclick="mobileFilter()"/>
+                    <img class="mobileIcon" src="./photobooth/favoritesIcon.png" onclick="mobileFavorites()"/>
+                </div>
+                <div>
+                    <div id="mobileUploadDiv">
+                        <input type="file" id="mobileFileSelector">
+                        <button class="button" id="mobileUploadButton" onclick="mobileUploadFile()">upload</button>
+                    </div>
+                    <div id="mobileFilterDiv">
+                        <input type="text" id="filterInput">
+                        <button class="button" onclick="filterTag()">enter</button>
+                        <button class="button" onclick="clearFilter()">clear filter</button>
+                    </div>
+                    <div id="mobileFavoritesDiv">
+                        <a id="favoritesLink" href="javascript:showFavorites()">&#x2605;&nbsp;&nbsp;favorites</a>
+                        <button class="button" onclick="clearFavorites()">clear filter</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div id="photoArea">
+            </div>
+            <div id="menuArea">
+                <details class="menuSection">
+                    <summary class="menuTitle">
+                        <span class="menuText">+&nbsp;&nbsp;upload</span>
+                    </summary>
+                    <div class="menuDetail">
+                        <input type="file" id="fileSelector">
+                        <button class="button" id="uploadButton" onclick="uploadFile()">upload</button>
+                    </div>
+                </details>
+                <details class="menuSection">
+                    <summary class="menuTitle">
+                        <span class="menuText">&#x2315;&nbsp;&nbsp;filter</span>
+                    </summary>
+                    <div class="menuDetail">
+                        <input type="text" id="filterInput">
+                        <button class="button" onclick="filterTag()">enter</button>
+                        <button class="button" onclick="clearFilter()">clear filter</button>
+                    </div>
+                </details>
+                <details class="menuSection">
+                    <summary class="menuTitle">
+                        <span class="menuText">
+                            <a id="favoritesLink" href="javascript:showFavorites()">&#x2605;&nbsp;&nbsp;favorites</a>
+                        </span>
+                    </summary>
+                </details>
+                <div class="menuDetail" id="clearFavorites">
+                    <button class="button" onclick="clearFavorites()">clear filter</button>
+                </div>
+            </div>
+        </main>
+        <script src="main.js"></script>
+    </body>
+</html>

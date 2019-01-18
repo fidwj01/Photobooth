@@ -1,0 +1,64 @@
+@font-face {
+    font-family: "GoudyStd";
+    src: url("./photobooth/fontGoudy/GoudyStd.otf");
+}
+
+@font-face {
+    font-family: "GoudyStd";
+    src: url("./photobooth/fontGoudy/GoudyStd-Bold.otf");
+    font-weight: bold;
+}
+
+body {
+    font-family: 'GoudyStd';
+    color: #7A503E;
+    margin: 0;
+    height: 500px;
+    display: flex;
+    min-height: 100vh;  /* need this line to tell body to fill viewport */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+main {
+    width: 240px;
+ 	/* flexbox */
+ 	display: flex;
+ 	flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+div#welcome {
+    text-align: center;
+    height: 168px;
+    font-size: 46px;
+    font-weight: bold;
+}
+
+div#credit {
+    margin-top: 32px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button#enterButton {
+    font-family: 'GoudyStd';
+    background-color: #7A503E;
+    border: 1px solid #402C21;
+    color: white;
+    height: 40px;
+    width: 110px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+button:hover#enterButton {
+    background-color: white;
+    color: #7A503E;
+}

@@ -1,0 +1,254 @@
+@font-face {
+    font-family: "GoudyStd";
+    src: url("./photobooth/fontGoudy/GoudyStd.otf");
+}
+
+@font-face {
+    font-family: "GoudyStd";
+    src: url("./photobooth/fontGoudy/GoudyStd-Bold.otf");
+    font-weight: bold;
+}
+
+body {
+    font-family: 'GoudyStd';
+    color: #7A503E;
+    margin: 0;
+    padding-left: 2vw;
+    padding-top: 4vh;
+    height: 96vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a#headline {
+    color: #7A503E;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 28px;
+}
+
+a#headline:visited {
+    color: #7A503E;
+}
+
+a {
+    text-decoration: none;
+}
+
+a#favoritesLink {
+    color: white;
+}
+
+a#favoritesLink:visited {
+    color: white;
+}
+
+span#headline {
+     font-size: 40px;
+     font-weight: bold;
+     margin-left: 28px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #7A503E;
+}
+
+main {
+    flex: 1 1 100%;
+ 	display: flex;
+    flex-direction: row;
+}
+
+div#photoArea {
+    margin-left: 10px;
+    margin-right: 24px;
+    margin-top: 24px;
+    margin-bottom: 10px;
+    display: flex;
+    flex: 1 1 auto;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    overflow: scroll;
+}
+
+.photoItem {
+    padding: 1px;
+    margin: 4px;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+}
+
+.photoDiv {
+    width: 100%;
+    position: relative;
+}
+
+.photoImg {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.menuDiv {
+    position: absolute;
+    right: 0;
+}
+
+.menuRow {
+    border: 1px solid #402C21;
+}
+
+.thirdRow {
+    border: 1px solid #402C21;
+    text-align: right;
+}
+
+.menuButton {
+    font-family: 'GoudyStd';
+    background-color: #885541;
+    border: 0;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.menuImg {
+    height: 38px;
+    width: 38px;
+}
+
+.tagDiv {
+    padding: 4px;
+    border: 1px solid #402C21;
+    font-family: 'GoudyStd';
+}
+
+.photoLable {
+    color: black;
+}
+
+div#menuArea {
+    flex: 0 0 164px;
+    align-self: stretch;
+    margin-top: -8px;
+    color: white;
+    background: #7A503E;
+}
+
+.menuTitle {
+    padding-top: 4px;
+    height: 30px;
+    margin-left: 16px;
+}
+
+.menuText {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menuDetail {
+    width: 144px;
+    background: #C9B9B1;
+    padding: 10px;
+}
+
+input#filterInput {
+    border: solid 1px #7A503E;
+    height: 18px;
+    margin-bottom: 10px;
+}
+
+input[type="file"] {
+    font-family: "GoudyStd";
+    font-weight: bold;
+    color: #7A503E;
+    margin-bottom: 10px;
+}
+
+div#clearFavorites {
+    display: none;
+}
+
+.button {
+    font-family: 'GoudyStd';
+    background-color: #7A503E;
+    padding-left: 9px;
+    padding-top: 4px;
+    padding-right: 9px;
+    border: 1px solid #402C21;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: white;
+    color: #7A503E;
+}
+
+.tagButton {
+    font-family: 'GoudyStd';
+    background-color: transparent;
+    border: 0;
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.mobileIcon {
+    height: 40px;
+}
+
+div#mobileMenu {
+    display: none;
+}
+
+div#mobileButtons {
+    display: inline;
+}
+
+div#mobileUploadDiv {
+    display: none;
+}
+
+div#mobileFilterDiv {
+    display: none;
+}
+
+div#mobileFavoritesDiv {
+    display: none;
+}
+
+details summary::-webkit-details-marker { display: none; }
+
+@media (max-width: 740px) {
+    a#headline {
+        margin-left: 25%;
+    }
+    hr#hr {
+        display: none;
+    }
+    main {
+     	display: block;
+    }
+    div#photoArea {
+        margin: 0;
+        display: block;
+    }
+    div#menuArea {
+        display: none;
+    }
+    .photoItem {
+        width: 50%;
+        margin: 0 auto;
+    }
+    div#mobileMenu {
+        display: block;
+        text-align: center;
+        margin: 20px;
+    }
+}
