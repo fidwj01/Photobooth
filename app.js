@@ -90,7 +90,7 @@ app.post('/', function (request, response){
 });
 
 // You know what this is, right?
-app.listen(12499);
+app.listen(process.env.PORT);
 
 // sends off an HTTP response with the given status code and message
 function sendCode(code,response,message) {
