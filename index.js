@@ -9,8 +9,7 @@ var formidable = require('formidable');  // we upload images in forms
 var port = process.env.PORT || 3000;
 var LIVE = true;
 var request = require('request');
-var http = require('http');
-// var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
+var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 
 // make a new express server object
 var app = express();
